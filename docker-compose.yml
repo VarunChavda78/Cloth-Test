@@ -43,7 +43,16 @@ services:
       - mongo
     environment:
       - MONGO_URI=mongodb://mongo:27017/mydatabase
-      - STRIPE_SECRET_KEY="sk_test_51QM5xCDvCdBpPMtcAvHfvdbXt2by4HcKOhNhChzLfsKD3eSc93PruBnwU1yaVkyaizoeA0kNmXjQ2htoPyCuy9UL002VhThALB"
+      - MONGO_URL='mongodb://127.0.0.1:27017'
+      - CLOUDINARY_API_KEY='345194169612513'
+      - CLOUDINARY_SECRET_KEY='tL5xvC1tgMjpg0EpCBpcGJCrwF0'
+      - CLOUDINARY_NAME='dnwsbytba'
+      - JWT_SECRET='niv'
+      - ADMIN_EMAIL="admin@gmail.com"
+      - ADMIN_PASSWORD="admin123"
+      - STRIPE_SECRET_KEY='sk_test_51QM5xCDvCdBpPMtcAvHfvdbXt2by4HcKOhNhChzLfsKD3eSc93PruBnwU1yaVkyaizoeA0kNmXjQ2htoPyCuy9UL002VhThALB'
+      - RAZORPAY_KEY_SECRET='0ZiI8iZ185Dx20ZY9S1Mck12'
+      - RAZORPAY_KEY_ID='rzp_test_pVMPiZnpHDsa6g'
     ports:
       - "4000:4000"
 
