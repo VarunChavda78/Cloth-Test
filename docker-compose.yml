@@ -42,7 +42,7 @@ services:
     depends_on:
       - mongo
     env_file:
-      - .env
+      - ./server/.env
     environment:
       - MONGO_URI=mongodb://mongo:27017/mydatabase
     ports:
